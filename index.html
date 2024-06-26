@@ -3,313 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EdTech Panda - Empower Your Education Projects</title>
-    <style>
-        /* Advanced CSS styles */
-        :root {
-            --primary-color: #ff4500;
-            --secondary-color: #333;
-            --bg-color: #fff;
-            --text-color: #333;
-        }
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Arial', sans-serif;
-            line-height: 1.6;
-            color: var(--text-color);
-            background-color: var(--bg-color);
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-
-        header {
-            background: var(--bg-color);
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-        }
-
-        nav {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 1rem 0;
-        }
-
-        .logo {
-            font-size: 1.5rem;
-            font-weight: bold;
-            color: var(--primary-color);
-        }
-
-        nav ul {
-            display: flex;
-            list-style: none;
-        }
-
-        nav ul li {
-            margin-left: 2rem;
-        }
-
-        nav ul li a {
-            text-decoration: none;
-            color: var(--secondary-color);
-            transition: color 0.3s ease;
-        }
-
-        nav ul li a:hover {
-            color: var(--primary-color);
-        }
-
-        .btn {
-            background: var(--primary-color);
-            color: white;
-            padding: 0.7rem 1.5rem;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-        }
-
-        .btn:hover {
-            background-color: #e63900;
-        }
-
-        .hero {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 2rem;
-            align-items: center;
-            padding: 4rem 0;
-        }
-
-        .hero h1 {
-            font-size: 3rem;
-            margin-bottom: 1rem;
-        }
-
-        .hero p {
-            font-size: 1.2rem;
-            margin-bottom: 2rem;
-        }
-
-        .mascot {
-            max-width: 100%;
-            height: auto;
-        }
-
-        .features {
-            background-color: #f9f9f9;
-            padding: 4rem 0;
-        }
-
-        .features-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 2rem;
-        }
-
-        .feature-item {
-            background-color: var(--primary-color);
-            color: white;
-            padding: 1rem;
-            border-radius: 5px;
-            text-align: center;
-        }
-
-        .solutions, .security, .optimization, .community, .testimonials, .cta {
-            padding: 4rem 0;
-        }
-
-        .solutions, .security, .optimization, .community {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 2rem;
-            align-items: center;
-        }
-
-        .testimonials {
-            background-color: #f9f9f9;
-        }
-
-        .testimonial-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-        }
-
-        .testimonial {
-            background-color: white;
-            padding: 2rem;
-            border-radius: 5px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        }
-
-        .rating {
-            color: gold;
-            font-size: 1.2rem;
-            margin-top: 1rem;
-        }
-
-        footer {
-            background-color: var(--secondary-color);
-            color: white;
-            padding: 2rem 0;
-        }
-
-        footer nav ul {
-            justify-content: center;
-        }
-
-        footer nav ul li a {
-            color: white;
-        }
-
-        @media (max-width: 768px) {
-            .hero, .solutions, .security, .optimization, .community {
-                grid-template-columns: 1fr;
-            }
-
-            nav ul {
-                display: none;
-            }
-        }
-    </style>
+    <title>Bento Grid Layout</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    <header>
-        <nav class="container">
-            <div class="logo">EdTech</div>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#pricing">Pricing</a></li>
-                <li><a href="#about">About us</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="#blog">Blog</a></li>
-            </ul>
-            <button class="btn">Sign up</button>
-        </nav>
-    </header>
-
-    <main>
-        <section id="home" class="hero container">
-            <div>
-                <h1>Empower your education projects.</h1>
-                <p>Learn how we can elevate your tech</p>
-                <button class="btn">Try for free</button>
-            </div>
-            <img src="/api/placeholder/400/320" alt="Red Panda mascot with laptop" class="mascot">
-        </section>
-
-        <section id="features" class="features">
-            <div class="container">
-                <h2>Features</h2>
-                <div class="features-grid">
-                    <div class="feature-item">Red</div>
-                    <div class="feature-item">Red</div>
-                    <div class="feature-item">Red</div>
-                    <div class="feature-item">Red</div>
-                    <div class="feature-item">Red</div>
-                    <div class="feature-item">Red</div>
-                </div>
-            </div>
-        </section>
-
-        <section id="solutions" class="solutions container">
-            <div>
-                <h2>Introducing innovative solutions</h2>
-                <p>Discover groundbreaking educational strategies that empower your students.</p>
-                <button class="btn">Try for free</button>
-            </div>
-            <img src="/api/placeholder/400/320" alt="Group of students collaborating">
-        </section>
-
-        <section id="security" class="security container">
-            <img src="/api/placeholder/400/320" alt="Students collaborating">
-            <div>
-                <h2>Your data is secure with us</h2>
-                <p>We prioritize the protection of your information...</p>
-                <button class="btn">Learn more</button>
-            </div>
-        </section>
-
-        <section id="optimization" class="optimization container">
-            <div>
-                <h2>Tech optimization made simple</h2>
-                <p>Our tools streamline your workflow...</p>
-                <button class="btn">Try now</button>
-            </div>
-            <img src="/api/placeholder/400/320" alt="Red Panda mascot with laptop" class="mascot">
-        </section>
-
-        <section id="community" class="community container">
-            <img src="/api/placeholder/400/320" alt="Red Panda mascot" class="mascot">
-            <div>
-                <h2>How to join our community</h2>
-                <p>Three steps to enhance your tech:</p>
-                <ol>
-                    <li>Step 1</li>
-                    <li>Step 2</li>
-                    <li>Step 3</li>
-                </ol>
-                <button class="btn">Sign up now</button>
-            </div>
-        </section>
-
-        <section id="testimonials" class="testimonials">
-            <div class="container">
-                <h2>Client testimonials</h2>
-                <div class="testimonial-grid">
-                    <div class="testimonial">
-                        <p>EdTech Panda transformed our educational approach!</p>
-                        <p>- John Doe</p>
-                        <div class="rating">⭐⭐⭐⭐⭐</div>
-                    </div>
-                    <div class="testimonial">
-                        <p>EdTech Panda is a game-changer for our school.</p>
-                        <p>- Jane Smith</p>
-                        <div class="rating">⭐⭐⭐⭐⭐</div>
-                    </div>
-                    <div class="testimonial">
-                        <p>EdTech Panda is a must-have for any educational institution.</p>
-                        <p>- Bob Johnson</p>
-                        <div class="rating">⭐⭐⭐⭐⭐</div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="cta" class="cta container">
-            <h2>Join EdTech Panda today</h2>
-            <p>Transform your tech journey</p>
-            <button class="btn">Sign up now</button>
-            <img src="/api/placeholder/400/320" alt="Red Panda mascot with laptop" class="mascot">
-        </section>
-    </main>
-
-    <footer>
-        <div class="container">
-            <p>&copy; 2024 EdTech Panda. All rights reserved.</p>
-            <nav>
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#careers">Careers</a></li>
-                    <li><a href="#privacy">Privacy Policy</a></li>
-                    <li><a href="#terms">Terms of Service</a></li>
-                </ul>
-            </nav>
+<body class="bg-gray-100 p-8">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 max-w-6xl mx-auto">
+        <!-- Welcome section -->
+        <div class="bg-white p-6 rounded-lg shadow">
+            <h2 class="text-xl font-bold mb-2">Hey, welcome to my site!</h2>
+            <p class="text-gray-600">I'm a digital designer, developer, and surfer from Malibu. In the digital world, I craft interfaces and dive into coding intricacies.</p>
         </div>
-    </footer>
+
+        <!-- Find me on -->
+        <div class="bg-white p-6 rounded-lg shadow">
+            <h2 class="text-2xl font-bold mb-4">Find me on</h2>
+            <div class="grid grid-cols-4 gap-2">
+                <div class="bg-gray-200 p-2 rounded"></div>
+                <div class="bg-gray-200 p-2 rounded"></div>
+                <div class="bg-gray-200 p-2 rounded"></div>
+                <div class="bg-gray-200 p-2 rounded"></div>
+            </div>
+        </div>
+
+        <!-- Grab my resume -->
+        <div class="bg-white p-6 rounded-lg shadow">
+            <h2 class="text-2xl font-bold mb-4">Grab my résumé!</h2>
+            <button class="bg-black text-white px-4 py-2 rounded">Download my CV</button>
+        </div>
+
+        <!-- Monomod -->
+        <div class="bg-white p-6 rounded-lg shadow">
+            <h2 class="text-2xl font-bold mb-2">Monomod</h2>
+            <p class="text-gray-600">Design & development subscriptions for startups</p>
+        </div>
+
+        <!-- Lexington -->
+        <div class="bg-white p-6 rounded-lg shadow">
+            <h2 class="text-2xl font-bold mb-2">Lexington</h2>
+            <p class="text-gray-600">Free and premium multipurpose themes and UI kits for Framer</p>
+        </div>
+
+        <!-- Figma Community -->
+        <div class="bg-white p-6 rounded-lg shadow flex items-center justify-center">
+            <img src="/api/placeholder/100/100" alt="Figma logo" class="w-16 h-16" />
+        </div>
+
+        <!-- Subscribe to newsletter -->
+        <div class="bg-white p-6 rounded-lg shadow md:col-span-2">
+            <h2 class="text-2xl font-bold mb-4">Subscribe to my newsletter</h2>
+            <input type="email" placeholder="Enter your email" class="border p-2 rounded w-full mb-2">
+            <button class="bg-black text-white px-4 py-2 rounded w-full">Subscribe</button>
+        </div>
+
+        <!-- Testimonials -->
+        <div class="bg-white p-6 rounded-lg shadow">
+            <h2 class="text-2xl font-bold mb-4">Testimonials</h2>
+            <p class="text-gray-600 mb-2">"Working with Michael has been an absolute pleasure. His attention to detail and creative problem-solving skills have greatly improved our product."</p>
+            <p class="font-bold">- John Doe, CEO</p>
+        </div>
+
+        <!-- Expertise -->
+        <div class="bg-white p-6 rounded-lg shadow md:col-span-2">
+            <h2 class="text-xl font-bold mb-2">As a digital designer, my expertise lies in crafting distinctive visual identities for digital products.</h2>
+            <p class="text-gray-600">I hold the belief that an engaging design begins with shared values, transparent communication, and a genuine respect for the audience.</p>
+        </div>
+    </div>
 </body>
 </html>
